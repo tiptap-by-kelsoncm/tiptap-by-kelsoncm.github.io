@@ -1,0 +1,64 @@
+/* TipTap by KelsonCM portal: only what the dsgovbr-bootstrapped theme (GOV.BR DS on Bootstrap 5) does not give. */
+body {
+  font-family: Rawline, Raleway, system-ui, sans-serif;
+  background: var(--bs-body-bg);
+}
+
+.portal-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: var(--bs-body-bg);
+}
+
+.portal-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.portal-hero {
+  background: linear-gradient(135deg, rgb(19 81 180 / 10%), rgb(124 58 237 / 10%));
+}
+
+.portal-search {
+  max-width: 560px;
+}
+
+.portal-kicker {
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+}
+
+.portal-steps li {
+  margin-bottom: 0.75rem;
+}
+
+.portal-shot {
+  margin: 0;
+}
+
+/* Same height for every screenshot; the top of the image is what matters. */
+.portal-shot img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+}
+
+[data-search][hidden] {
+  display: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .portal-brand span {
+    font-size: 0.95rem;
+  }
+}
